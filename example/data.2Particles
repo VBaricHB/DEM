@@ -1,0 +1,20 @@
+LIGGGHTS data file from DLA Simulation 
+
+2 atoms
+1 atom types
+1 bond types
+0 angle types
+24 extra bond per atom
+
+-5.0e-07 5.0e-07 xlo xhi
+-5.0e-07 5.0e-07 ylo yhi
+-5.0e-07 5.0e-07 zlo zhi
+
+Masses
+
+1 2.315992e-21
+
+Atoms
+
+1 1 0.000e+00 0.000e+00 5.000e-09 1.015e-08 4.230e+03 1
+2 1 0.000e+00 1.000e-08 5.000e-09 1.015e-08 4.230e+03 1

@@ -1,0 +1,63 @@
+atom_style      hybrid granular bond/gran n_bondtypes 1 bonds_per_atom 30
+
+units           si
+boundary        p p p
+newton		    off
+
+################################################################################
+# data input
+read_data       data.2Particles
+
+################################################################################
+### NEIGHBORSLIST
+
+communicate	single vel yes
+# Neighborslist cutoff
+neighbor        3.0e-9 bin
+neigh_modify	delay 0
+
+################################################################################
+### Interaction
+fix             m1 all property/global youngsModulus peratomtype 5.6e10
+fix             m2 all property/global poissonsRatio peratomtype 0.28 
+fix             m3 all property/global coefficientRestitution peratomtypepair 1 0.94
+fix             m4 all property/global coefficientRollingFriction peratomtypepair 1 2.5e8
+fix             m5 all property/global coefficientFriction peratomtypepair 1 6.5e8
+fix 		    m6 all property/global cohesionEnergyDensity peratomtypepair 1 2e8
+
+pair_style	    gran model hertz tangential history rolling_friction cdt
+pair_coeff	    * *
+
+################################################################################
+### bonds
+bond_style      gran
+bond_coeff      1 0.48 2.800000e+18 1.093750e+18 1 1.40e+09 1.40e+09
+# Initialize
+timestep        5e-13
+run             1
+# Create Bond
+fix             bond1 all bond/create/gran 1 1 1 1.010000e-08 1 9
+run             1
+# disable bond creations for further simulation 
+fix_modify      bond1 every 0
+
+################################################################################
+# Movement
+group           pull id 1 
+group           freeze id 2
+
+fix             F_frozen1 pull setforce 0.0 0.0 0.0 
+fix             F_frozen2 freeze setforce 0.0 0.0 0.0 
+fix             F_move pull move linear 0.0 -0.5 0.0 units box
+fix             F_force all ave/time 1 500 500 f_F_frozen1[1] f_F_frozen1[2] f_F_frozen1[3] f_F_frozen2[1] f_F_frozen2[2] f_F_frozen2[3]  file  forces.out
+
+
+##############################################################################
+### Terminal output
+thermo		    1000
+
+# Dump file
+dump		    dmp all custom 500 trajectory.trj id mol type radius x y z ix iy iz vx vy vz fx fy fz omegax omegay omegaz
+
+run             10000
+
