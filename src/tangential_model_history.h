@@ -131,7 +131,7 @@ namespace ContactModels
       // tangential forces = shear + tangential velocity damping
       const double Ft_friction = xmu * 3.1415926536 * (radi2 - (radi2 - radj2 + d2) * (radi2 - radj2 + d2) / (4*d2)); //Use equation F_t=tau*A for microscopic sliding; pi is approximately 3.1415926536
       // ATTENTION: This part was manually added by Jens Laube to enable a sawtooth curve for tangential friction.
-      const double kt = Ft_friction / 0.4e-9; // This means that the values kt from the input are meaningless and that the length of the sawtooth triangles is set to 0.4nm absolutely.
+      const double kt = Ft_friction / 0.5e-9; // This means that the values kt from the input are meaningless and that the length of the sawtooth triangles is set to 0.4nm absolutely.
       // This setup is not ideal and should be changed in the future, but I don't know how the values from "property global" are converted to the correct units.
       // tangential forces = shear + tangential velocity damping
       // *********

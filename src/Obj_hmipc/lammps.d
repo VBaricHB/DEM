@@ -244,28 +244,29 @@ lammps.o: ../lammps.cpp \
  ../pair_gran.h ../pair.h ../compute_pair_gran_local.h ../pair_gran_proxy.h \
  ../pair_gran.h ../granular_pair_style.h ../pair_gran.h ../pair_hybrid.h \
  ../pair_hybrid_overlay.h ../pair_hybrid.h ../pair_soft.h \
- ../pair_sph_artvisc_tenscorr.h ../pair_sph.h ../pair_sph.h ../style_region.h \
- ../region_block.h ../region.h ../region_cone.h ../region_cylinder.h \
- ../region_intersect.h ../region_mesh_tet.h ../region_mesh_tet_I.h \
- ../region_plane.h ../region_prism.h ../region_sphere.h ../region_union.h \
- ../region_wedge.h ../universe.h ../domain_wedge.h ../domain_wedge_dummy.h \
- ../force.h ../property_registry.h ../fix_property_global.h \
- /usr/include/c++/4.8/set /usr/include/c++/4.8/bits/stl_set.h \
- /usr/include/c++/4.8/bits/stl_multiset.h ../properties.h ../modify.h ../group.h \
- ../output.h ../citeme.h ../accelerator_cuda.h ../verlet.h ../accelerator_omp.h \
- ../timer.h ../style_atom.h ../atom_vec_atomic.h ../atom_vec_bond_gran.h \
+ ../pair_sph_artvisc_tenscorr.h ../pair_sph.h ../pair_sph.h ../pair_table.h \
+ ../style_region.h ../region_block.h ../region.h ../region_cone.h \
+ ../region_cylinder.h ../region_intersect.h ../region_mesh_tet.h \
+ ../region_mesh_tet_I.h ../region_plane.h ../region_prism.h ../region_sphere.h \
+ ../region_union.h ../region_wedge.h ../universe.h ../domain_wedge.h \
+ ../domain_wedge_dummy.h ../force.h ../property_registry.h \
+ ../fix_property_global.h /usr/include/c++/4.8/set \
+ /usr/include/c++/4.8/bits/stl_set.h /usr/include/c++/4.8/bits/stl_multiset.h \
+ ../properties.h ../modify.h ../group.h ../output.h ../citeme.h \
+ ../accelerator_cuda.h ../verlet.h ../accelerator_omp.h ../timer.h \
+ ../style_atom.h ../atom_vec_atomic.h ../atom_vec_bond_gran.h \
  ../atom_vec_charge.h ../atom_vec_ellipsoid.h ../atom_vec_hybrid.h \
  ../atom_vec_line.h ../atom_vec_sphere.h ../atom_vec_sph.h ../atom_vec_sph_var.h \
  ../style_integrate.h ../respa.h ../verlet.h ../style_minimize.h ../min_cg.h \
  ../style_pair.h ../pair_gran.h ../pair_gran_proxy.h ../pair_hybrid.h \
  ../pair_hybrid_overlay.h ../pair_soft.h ../pair_sph_artvisc_tenscorr.h \
- ../pair_sph.h ../style_bond.h ../bond_gran.h ../bond_hybrid.h ../style_angle.h \
- ../angle_hybrid.h ../style_dihedral.h ../dihedral_hybrid.h ../style_improper.h \
- ../improper_hybrid.h ../style_kspace.h ../style_fix.h ../fix_adapt.h \
- ../fix_addforce.h ../fix_ave_atom.h ../fix_ave_correlate.h ../fix_ave_euler.h \
- ../fix_aveforce.h ../fix_ave_histo.h ../fix_ave_spatial.h ../fix_ave_time.h \
- ../fix_bond_create_gran.h ../fix_bond_propagate_gran.h ../fix_box_relax.h \
- ../fix_buoyancy.h ../fix_cfd_coupling_convection.h \
+ ../pair_sph.h ../pair_table.h ../style_bond.h ../bond_gran.h ../bond_hybrid.h \
+ ../style_angle.h ../angle_hybrid.h ../style_dihedral.h ../dihedral_hybrid.h \
+ ../style_improper.h ../improper_hybrid.h ../style_kspace.h ../style_fix.h \
+ ../fix_adapt.h ../fix_addforce.h ../fix_ave_atom.h ../fix_ave_correlate.h \
+ ../fix_ave_euler.h ../fix_aveforce.h ../fix_ave_histo.h ../fix_ave_spatial.h \
+ ../fix_ave_time.h ../fix_bond_create_gran.h ../fix_bond_propagate_gran.h \
+ ../fix_box_relax.h ../fix_buoyancy.h ../fix_cfd_coupling_convection.h \
  ../fix_cfd_coupling_convection_species.h ../fix_cfd_coupling_force.h \
  ../fix_cfd_coupling_force_implicit.h ../fix_cfd_coupling.h \
  ../fix_check_timestep_gran.h ../fix_check_timestep_sph.h \

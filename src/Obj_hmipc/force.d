@@ -134,13 +134,13 @@ force.o: ../force.cpp /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/c++/4.8/istream /usr/include/c++/4.8/bits/istream.tcc \
  ../pair_gran.h ../pair_hybrid.h ../pair_hybrid_overlay.h ../pair_hybrid.h \
  ../pair_soft.h ../pair_sph_artvisc_tenscorr.h ../pair_sph.h ../pair_sph.h \
- ../style_kspace.h ../atom.h ../comm.h ../pair_gran.h ../pair_hybrid.h \
- ../pair_hybrid_overlay.h ../bond_hybrid.h ../kspace.h ../group.h ../memory.h \
- ../style_pair.h ../pair_gran.h ../pair_gran_proxy.h ../pair_hybrid.h \
- ../pair_hybrid_overlay.h ../pair_soft.h ../pair_sph_artvisc_tenscorr.h \
- ../pair_sph.h ../style_bond.h ../bond_gran.h ../bond_hybrid.h ../style_bond.h \
- ../bond_gran.h ../bond_hybrid.h ../style_angle.h ../angle_hybrid.h \
- ../style_angle.h ../angle_hybrid.h ../style_dihedral.h ../dihedral_hybrid.h \
- ../style_dihedral.h ../dihedral_hybrid.h ../style_improper.h \
- ../improper_hybrid.h ../style_improper.h ../improper_hybrid.h ../style_kspace.h \
- ../style_kspace.h
+ ../pair_table.h ../style_kspace.h ../atom.h ../comm.h ../pair_gran.h \
+ ../pair_hybrid.h ../pair_hybrid_overlay.h ../bond_hybrid.h ../kspace.h \
+ ../group.h ../memory.h ../style_pair.h ../pair_gran.h ../pair_gran_proxy.h \
+ ../pair_hybrid.h ../pair_hybrid_overlay.h ../pair_soft.h \
+ ../pair_sph_artvisc_tenscorr.h ../pair_sph.h ../pair_table.h ../style_bond.h \
+ ../bond_gran.h ../bond_hybrid.h ../style_bond.h ../bond_gran.h ../bond_hybrid.h \
+ ../style_angle.h ../angle_hybrid.h ../style_angle.h ../angle_hybrid.h \
+ ../style_dihedral.h ../dihedral_hybrid.h ../style_dihedral.h \
+ ../dihedral_hybrid.h ../style_improper.h ../improper_hybrid.h \
+ ../style_improper.h ../improper_hybrid.h ../style_kspace.h ../style_kspace.h
